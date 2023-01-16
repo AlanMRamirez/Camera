@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}Picture{% endblock %}
+
+{% block content%}
+    <div>
+        <form action="/picture" method="POST">
+            <center>
+                <input type="submit" name="submit_button" value="take photo" class="btn btn-primary mt-2">
+            </center>
+        </form>
+        <div class="text-center text-lg-start">
+            <center>
+            <a href="{{ photo }}" class="d-block mb-4 h-100 text-dark" style="text-decoration:none ">
+            <img class="img-fluid img-thumbnail" src="{{ photo }}" width="80%" height="300">
+            </a>
+            </center>
+        </div>          
+    </div>
+{% endblock %}

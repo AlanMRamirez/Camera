@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content%}
+<div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Camera IPC</h1>
+    </div>
+  </div>
+<div>
+    <div class="panel panel-default">
+        <center>
+        <div class="panel-heading">Camera General Information</div>
+        </center>
+        <ul>
+            {% for e in data %}
+                <li class="list-group-item">{{e}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+  
+</div>
+
+    <div class="panel panel-default">
+        <center>
+            <div class="panel-heading">Name Machine</div>
+        </center>
+            <ul>
+                <li class="list-group-item">{{name}}</li>
+                <li class="list-group-item">{{device[1]}}</li>
+            </ul>
+    </div>
+
+    <div class="panel panel-default">
+        <center>
+            <div class="panel-heading">Serial Number</div>
+        </center>   
+        <ul>
+            <li class="list-group-item">{{serial}}</li>
+        </ul>
+    </div>
+
+    <div class="panel panel-default">
+        <center>
+            <div class="panel-heading">Languages</div>
+        </center>   
+        <ul>
+            <li class="list-group-item">{{language}}</li>
+        </ul>
+    </div>
+{% endblock %}
