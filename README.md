@@ -2,7 +2,7 @@
 
 Project Elipgo
 
-##Installation
+<h1>Installation</h1>
 
 <h2>first step</h2>
 Create a virtual environment
@@ -10,7 +10,7 @@ Create a virtual environment
 <h2>Second step</h2>
 Install the libraries with file requirements.txt
 
-##For run project
+<h1>For run project</h1>
 
 Run file run.py
 
